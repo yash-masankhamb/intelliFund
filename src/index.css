@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 3%;
+    --foreground: 210 40% 98%;
+
+    --card: 217 33% 11%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 217 33% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 168 64% 52%;
+    --primary-foreground: 222 47% 3%;
+
+    --secondary: 217 91% 60%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 25% 63%;
+
+    --accent: 168 64% 52%;
+    --accent-foreground: 222 47% 3%;
+
+    --destructive: 347 77% 61%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 100% / 0.1;
+    --input: 217 33% 17%;
+    --ring: 168 64% 52%;
+
+    --radius: 0.75rem;
+
+    --warning: 38 92% 50%;
+    --success: 160 84% 39%;
+    --risk-high: 347 77% 61%;
+    --risk-moderate: 38 92% 50%;
+    --risk-low: 160 84% 39%;
+
+    --glass-bg: 217 33% 11% / 0.6;
+    --glass-border: 0 0% 100% / 0.1;
+    --glow-primary: 168 64% 52% / 0.3;
+    --glow-secondary: 217 91% 60% / 0.3;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    background: linear-gradient(135deg, hsl(222 47% 5%), hsl(222 47% 3%), hsl(220 50% 2%));
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply rounded-xl border backdrop-blur-xl;
+    background: hsl(var(--glass-bg));
+    border-color: hsl(var(--glass-border));
+  }
+
+  .glass-card-hover {
+    @apply glass-card transition-all duration-300;
+  }
+
+  .glass-card-hover:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px hsl(var(--glow-primary));
+    border-color: hsl(168 64% 52% / 0.3);
+  }
+
+  .glow-primary {
+    box-shadow: 0 0 20px hsl(var(--glow-primary));
+  }
+
+  .glow-secondary {
+    box-shadow: 0 0 20px hsl(var(--glow-secondary));
+  }
+
+  .btn-glow {
+    @apply relative overflow-hidden rounded-full font-semibold transition-all duration-300;
+    background: linear-gradient(135deg, hsl(168 64% 52%), hsl(168 64% 42%));
+    color: hsl(222 47% 3%);
+    box-shadow: 0 0 20px hsl(168 64% 52% / 0.3);
+  }
+
+  .btn-glow:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px hsl(168 64% 52% / 0.5);
+  }
+
+  .btn-outline-glow {
+    @apply relative overflow-hidden rounded-full font-semibold transition-all duration-300 border;
+    border-color: hsl(168 64% 52% / 0.5);
+    color: hsl(168 64% 52%);
+  }
+
+  .btn-outline-glow:hover {
+    background: hsl(168 64% 52% / 0.1);
+    box-shadow: 0 0 20px hsl(168 64% 52% / 0.2);
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(168 64% 52%), hsl(217 91% 60%));
+  }
+
+  .risk-badge-high {
+    @apply px-3 py-1 rounded-full text-xs font-semibold;
+    background: hsl(347 77% 61% / 0.15);
+    color: hsl(347 77% 61%);
+    box-shadow: 0 0 10px hsl(347 77% 61% / 0.2);
+  }
+
+  .risk-badge-moderate {
+    @apply px-3 py-1 rounded-full text-xs font-semibold;
+    background: hsl(38 92% 50% / 0.15);
+    color: hsl(38 92% 50%);
+    box-shadow: 0 0 10px hsl(38 92% 50% / 0.2);
+  }
+
+  .risk-badge-low {
+    @apply px-3 py-1 rounded-full text-xs font-semibold;
+    background: hsl(160 84% 39% / 0.15);
+    color: hsl(160 84% 39%);
+    box-shadow: 0 0 10px hsl(160 84% 39% / 0.2);
+  }
+
+  .metric-card {
+    @apply glass-card p-5 flex flex-col gap-1;
+  }
+
+  .skeleton-shimmer {
+    @apply rounded-lg animate-pulse;
+    background: linear-gradient(90deg, hsl(217 33% 14%), hsl(217 24% 23%), hsl(217 33% 14%));
+    background-size: 200% 100%;
+  }
+
+  .nav-glass {
+    @apply fixed top-0 left-0 right-0 z-50 backdrop-blur-xl border-b;
+    background: hsl(222 47% 3% / 0.8);
+    border-color: hsl(0 0% 100% / 0.05);
+  }
+}
+
+@keyframes orbit {
+  from { transform: rotate(0deg) translateX(80px) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(80px) rotate(-360deg); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
