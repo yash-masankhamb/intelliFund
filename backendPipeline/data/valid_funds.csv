@@ -1,0 +1,26 @@
+fund_name,scheme_code,category,risk_bucket,cagr,volatility,sharpe_ratio,max_drawdown
+Bank of India Liquid Fund,119369,liquid,safe,0.0701,0.0024,4.2024,-0.0002
+ICICI Pru All Seasons Bond Fund,120603,debt,safe,0.0822,0.0128,1.7265,-0.0083
+ICICI Pru Regular Savings Fund,120616,hybrid,moderate,0.1051,0.0284,1.5863,-0.0212
+Aditya Birla SL Corporate Bond,119533,debt,safe,0.0768,0.0112,1.5053,-0.0076
+Parag Parikh Flexi Cap Fund,122639,flexi_cap,aggressive,0.1887,0.0945,1.3612,-0.0846
+ICICI Pru Equity & Debt Fund,120251,hybrid,moderate,0.1841,0.0914,1.3569,-0.1118
+WhiteOak Capital Large Cap Fund,150584,large_cap,moderate,0.2623,0.1503,1.3463,-0.1933
+HDFC Flexi Cap Fund,118955,flexi_cap,aggressive,0.2019,0.1089,1.3023,-0.123
+HDFC ELSS Tax Saver Fund,119060,elss,aggressive,0.1889,0.1134,1.1366,-0.1447
+ICICI Prudential Multicap Fund,120599,multi_cap,aggressive,0.1939,0.1217,1.0999,-0.1725
+Mahindra Manulife Small Cap Fund,150915,small_cap,aggressive,0.2356,0.1736,1.0116,-0.26
+Motilal Oswal ELSS Tax Saver Fund,133386,elss,aggressive,0.2223,0.1809,0.8974,-0.2771
+HDFC NIFTY 100 Equal Weight Index Fund,149870,large_cap,moderate,0.1838,0.1427,0.8672,-0.216
+Motilal Oswal Midcap Fund,127042,mid_cap,aggressive,0.2008,0.163,0.8636,-0.2738
+Baroda BNP Paribas Multi Cap Fund,119354,multi_cap,aggressive,0.1792,0.1417,0.841,-0.194
+Kotak Multicap Fund,148946,multi_cap,aggressive,0.203,0.1719,0.8317,-0.265
+UTI Mid Cap Fund,120726,mid_cap,aggressive,0.1727,0.1419,0.7939,-0.2266
+Nippon India Small Cap Fund,119066,small_cap,aggressive,0.124,0.0893,0.7162,-0.1239
+Bank of India Flexi Cap Fund,147833,flexi_cap,aggressive,0.0938,0.0502,0.6735,-0.0755
+DSP Large Cap Fund,119020,large_cap,moderate,0.1151,0.09,0.6115,-0.1142
+Sundaram Nifty 100 Equal Weight Fund,100033,large_cap,moderate,0.1413,0.1405,0.5786,-0.2077
+PGIM India Midcap Fund,125307,mid_cap,aggressive,0.132,0.14,0.5146,-0.1913
+Nippon India Large Cap Fund,119063,large_cap,moderate,0.117,0.1221,0.467,-0.1552
+SBI Multi Asset Allocation Fund,120448,multi_asset,moderate,0.0533,0.0321,-0.2088,-0.0296
+Kotak Debt Hybrid Fund,120512,debt,safe,-0.0004,0.0123,-4.8951,-0.0082
