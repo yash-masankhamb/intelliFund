@@ -1,0 +1,49 @@
+fund_name,scheme_code,category,num_rows,start_date,end_date,years_covered,missing_returns,cagr,volatility,sharpe_ratio,max_drawdown,status,remarks
+SBI Conservative Hybrid Fund,119102,debt,,,,,,,,,,REJECT,"too_few_rows, short_history, missing_cagr, missing_volatility, missing_sharpe, missing_drawdown"
+DSP ELSS Tax Saver Fund,119033,elss,,,,,,,,,,REJECT,"too_few_rows, short_history, missing_cagr, missing_volatility, missing_sharpe, missing_drawdown"
+SBI ELSS Tax Saver Fund,119104,elss,,,,,,,,,,REJECT,"too_few_rows, short_history, missing_cagr, missing_volatility, missing_sharpe, missing_drawdown"
+WhiteOak Capital ELSS Tax Saver Fund,150033,elss,,,,,,,,,,REJECT,"too_few_rows, short_history, missing_cagr, missing_volatility, missing_sharpe, missing_drawdown"
+Edelweiss Flexi Cap Fund,131971,flexi_cap,,,,,,,,,,REJECT,"too_few_rows, short_history, missing_cagr, missing_volatility, missing_sharpe, missing_drawdown"
+Franklin India Aggressive Hybrid,120019,hybrid,,,,,,,,,,REJECT,"too_few_rows, short_history, missing_cagr, missing_volatility, missing_sharpe, missing_drawdown"
+ICICI Pru Equity & Debt Fund,120251,hybrid,735.0,2023-03-02,2026-02-27,2.99,1.0,,,,,REJECT,"missing_cagr, missing_volatility, missing_sharpe, missing_drawdown"
+DSP Nifty 50 Equal Weight Index Fund,141447,large_cap,,,,,,,,,,REJECT,"too_few_rows, short_history, missing_cagr, missing_volatility, missing_sharpe, missing_drawdown"
+HDFC Large Cap Fund,118981,large_cap,,,,,,,,,,REJECT,"too_few_rows, short_history, missing_cagr, missing_volatility, missing_sharpe, missing_drawdown"
+ICICI Prudential Large Cap Fund,119031,large_cap,,,,,,,,,,REJECT,"too_few_rows, short_history, missing_cagr, missing_volatility, missing_sharpe, missing_drawdown"
+HDFC Liquid Fund,119064,liquid,,,,,,,,,,REJECT,"too_few_rows, short_history, missing_cagr, missing_volatility, missing_sharpe, missing_drawdown"
+ICICI Pru Liquid Fund,119044,liquid,,,,,,,,,,REJECT,"too_few_rows, short_history, missing_cagr, missing_volatility, missing_sharpe, missing_drawdown"
+DSP Midcap Fund,119036,mid_cap,,,,,,,,,,REJECT,"too_few_rows, short_history, missing_cagr, missing_volatility, missing_sharpe, missing_drawdown"
+Mirae Asset Midcap Fund,147130,mid_cap,,,,,,,,,,REJECT,"too_few_rows, short_history, missing_cagr, missing_volatility, missing_sharpe, missing_drawdown"
+Nippon India Growth Fund,119054,mid_cap,,,,,,,,,,REJECT,"too_few_rows, short_history, missing_cagr, missing_volatility, missing_sharpe, missing_drawdown"
+Kotak Multi Asset Allocator FoF,119337,multi_asset,,,,,,,,,,REJECT,"too_few_rows, short_history, missing_cagr, missing_volatility, missing_sharpe, missing_drawdown"
+Bandhan Small Cap Fund,147820,small_cap,,,,,,,,,,REJECT,"too_few_rows, short_history, missing_cagr, missing_volatility, missing_sharpe, missing_drawdown"
+ITI Small Cap Fund,147043,small_cap,,,,,,,,,,REJECT,"too_few_rows, short_history, missing_cagr, missing_volatility, missing_sharpe, missing_drawdown"
+Invesco India Smallcap Fund,145028,small_cap,,,,,,,,,,REJECT,"too_few_rows, short_history, missing_cagr, missing_volatility, missing_sharpe, missing_drawdown"
+Tata Small Cap Fund,145265,small_cap,,,,,,,,,,REJECT,"too_few_rows, short_history, missing_cagr, missing_volatility, missing_sharpe, missing_drawdown"
+Bank of India Flexi Cap Fund,147833,flexi_cap,728.0,2023-03-02,2026-02-27,2.99,1.0,0.1003,0.0493,0.8176,-0.0755,REVIEW,equity_vol_too_low
+SBI Equity Hybrid Fund,119089,hybrid,911.0,2023-03-02,2026-02-27,2.99,1.0,0.0,0.0002,-266.6385,-0.0002,REVIEW,"moderate_vol_too_low, moderate_sharpe_extreme, sharpe_extreme"
+Invesco India Mid Cap Fund,119107,mid_cap,725.0,2023-03-02,2026-02-27,2.99,1.0,0.0074,0.0187,-2.8096,-0.0074,REVIEW,"equity_vol_too_low, equity_cagr_too_low, equity_drawdown_too_small"
+SBI Multicap Fund,148941,multi_cap,838.0,2023-03-02,2025-09-30,2.58,1.0,0.0738,0.0041,3.403,-0.001,REVIEW,"equity_vol_too_low, equity_drawdown_too_small"
+ICICI Prudential Smallcap Fund,118942,small_cap,723.0,2023-03-02,2026-02-27,2.99,1.0,0.0781,0.0044,4.1,-0.0012,REVIEW,"equity_vol_too_low, equity_drawdown_too_small"
+Aditya Birla SL Corporate Bond,119533,debt,723.0,2023-03-02,2026-02-27,2.99,1.0,0.0785,0.0109,1.6976,-0.0076,VALID,looks_good
+ICICI Pru All Seasons Bond Fund,120603,debt,722.0,2023-03-02,2026-02-27,2.99,1.0,0.0841,0.0126,1.9102,-0.0083,VALID,looks_good
+Kotak Debt Hybrid Fund,120512,debt,728.0,2023-03-02,2026-02-27,2.99,1.0,0.0004,0.0123,-4.8527,-0.0082,VALID,looks_good
+HDFC ELSS Tax Saver Fund,119060,elss,735.0,2023-03-02,2026-02-27,2.99,1.0,0.2226,0.1109,1.4663,-0.1447,VALID,looks_good
+Motilal Oswal ELSS Tax Saver Fund,133386,elss,735.0,2023-03-02,2026-02-27,2.99,1.0,0.2332,0.1801,0.9616,-0.2771,VALID,looks_good
+HDFC Flexi Cap Fund,118955,flexi_cap,735.0,2023-03-02,2026-02-27,2.99,1.0,0.2341,0.1063,1.6382,-0.123,VALID,looks_good
+Parag Parikh Flexi Cap Fund,122639,flexi_cap,734.0,2023-03-02,2026-02-27,2.99,1.0,0.2082,0.0941,1.5746,-0.0846,VALID,looks_good
+ICICI Pru Regular Savings Fund,120616,hybrid,722.0,2023-03-02,2026-02-27,2.99,1.0,0.1112,0.0278,1.8431,-0.0179,VALID,looks_good
+DSP Large Cap Fund,119020,large_cap,735.0,2023-03-02,2026-02-27,2.99,1.0,0.1276,0.0884,0.7642,-0.1142,VALID,looks_good
+HDFC NIFTY 100 Equal Weight Index Fund,149870,large_cap,735.0,2023-03-02,2026-02-27,2.99,1.0,0.2094,0.1402,1.0655,-0.216,VALID,looks_good
+Nippon India Large Cap Fund,119063,large_cap,735.0,2023-03-02,2026-02-27,2.99,1.0,0.1433,0.1204,0.6917,-0.1552,VALID,looks_good
+Sundaram Nifty 100 Equal Weight Fund,100033,large_cap,735.0,2023-03-02,2026-02-27,2.99,1.0,0.1646,0.1381,0.7575,-0.2077,VALID,looks_good
+WhiteOak Capital Large Cap Fund,150584,large_cap,735.0,2023-03-02,2026-02-27,2.99,1.0,0.2809,0.1484,1.4886,-0.1933,VALID,looks_good
+Bank of India Liquid Fund,119369,liquid,805.0,2023-03-02,2026-02-27,2.99,1.0,0.0704,0.0024,4.2777,-0.0002,VALID,looks_good
+Motilal Oswal Midcap Fund,127042,mid_cap,735.0,2023-03-02,2026-02-27,2.99,1.0,0.2183,0.1614,0.9803,-0.2433,VALID,looks_good
+PGIM India Midcap Fund,125307,mid_cap,735.0,2023-03-02,2026-02-27,2.99,1.0,0.1527,0.1375,0.674,-0.1913,VALID,looks_good
+UTI Mid Cap Fund,120726,mid_cap,735.0,2023-03-02,2026-02-27,2.99,1.0,0.1852,0.1396,0.8969,-0.2266,VALID,looks_good
+SBI Multi Asset Allocation Fund,120448,multi_asset,728.0,2023-03-02,2026-02-27,2.99,1.0,0.0565,0.0319,-0.1109,-0.0296,VALID,looks_good
+Baroda BNP Paribas Multi Cap Fund,119354,multi_cap,735.0,2023-03-02,2026-02-27,2.99,1.0,0.1954,0.1398,0.9688,-0.194,VALID,looks_good
+ICICI Prudential Multicap Fund,120599,multi_cap,735.0,2023-03-02,2026-02-27,2.99,1.0,0.2162,0.1183,1.3209,-0.1725,VALID,looks_good
+Kotak Multicap Fund,148946,multi_cap,742.0,2023-03-02,2026-02-27,2.99,1.0,0.2329,0.1695,1.0199,-0.265,VALID,looks_good
+Mahindra Manulife Small Cap Fund,150915,small_cap,735.0,2023-03-02,2026-02-27,2.99,1.0,0.2541,0.1714,1.1327,-0.26,VALID,looks_good
+Nippon India Small Cap Fund,119066,small_cap,735.0,2023-03-02,2026-02-27,2.99,1.0,0.1431,0.0883,0.9406,-0.1239,VALID,looks_good
