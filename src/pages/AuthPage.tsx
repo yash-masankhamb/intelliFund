@@ -33,7 +33,7 @@ export default function AuthPage() {
         if (error) throw error;
         toast({ title: "Successfully logged in!", description: "Redirecting you to Get Advice." });
       } else {
-        const { error } = await supabase.auth.signUp({
+        const { data, error: signUpError } = await supabase.auth.signUp({
           email,
           password,
           options: {
@@ -41,14 +41,30 @@ export default function AuthPage() {
             emailRedirectTo: window.location.origin,
           },
         });
-        if (error) throw error;
+
+        if (signUpError) throw signUpError;
+
+        if (data.user) {
+          const { error: profileError } = await supabase
+            .from("user_profiles")
+            .upsert({
+              id: data.user.id,
+              full_name: fullName,
+            });
+
+          if (profileError) {
+            console.error("Profile creation error:", profileError);
+            throw profileError;
+          }
+        }
+
         toast({
           title: "Successfully signed up!",
           description: "Your account is ready. Redirecting you to Get Advice.",
         });
       }
-    } catch (error: any) {
-      toast({ title: "Error", description: error.message, variant: "destructive" });
+    } catch (error: unknown) {
+      toast({ title: "Error", description: (error as Error).message, variant: "destructive" });
     } finally {
       setLoading(false);
     }

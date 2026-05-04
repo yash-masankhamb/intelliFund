@@ -80,6 +80,48 @@ export type Database = {
         }
         Relationships: []
       }
+      user_profiles: {
+        Row: {
+          id: string
+          full_name: string | null
+          monthly_income: string | null
+          income_stability: string | null
+          sip_amount: string | null
+          investment_experience: string | null
+          risk_profile: string | null
+          investment_goal: string | null
+          time_horizon: string | null
+          investment_preference: string | null
+          created_at: string | null
+        }
+        Insert: {
+          id: string
+          full_name?: string | null
+          monthly_income?: string | null
+          income_stability?: string | null
+          sip_amount?: string | null
+          investment_experience?: string | null
+          risk_profile?: string | null
+          investment_goal?: string | null
+          time_horizon?: string | null
+          investment_preference?: string | null
+          created_at?: string | null
+        }
+        Update: {
+          id?: string
+          full_name?: string | null
+          monthly_income?: string | null
+          income_stability?: string | null
+          sip_amount?: string | null
+          investment_experience?: string | null
+          risk_profile?: string | null
+          investment_goal?: string | null
+          time_horizon?: string | null
+          investment_preference?: string | null
+          created_at?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
